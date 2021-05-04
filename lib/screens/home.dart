@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
         child: new Column(
           children: <Widget>[
             new Text('Abdullah Sheikh'),
-            new RaisedButton(onPressed: () {Navigator.of(context).pushNamed('./Second');},child: new Text('Next'),),
+            new RaisedButton(onPressed: () {Navigator.of(context).pushNamedAndRemoveUntil('./Second',(Route<dynamic> route) =>false);},child: new Text('Next'),),
           ],
         ),
       ),

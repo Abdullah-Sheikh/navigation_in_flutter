@@ -17,7 +17,7 @@ class _SecondState extends State<Second> {
         child: new Column(
           children: <Widget>[
             new Text('Second Screen'),
-            new RaisedButton(onPressed: () {Navigator.of(context).pushNamed('./Second');},child: new Text('Next'),),
+            new RaisedButton(onPressed: () {Navigator.of(context).pushNamed('./Third');},child: new Text('Next'),),
             new RaisedButton(onPressed: () {Navigator.of(context).pushNamed('./Home');},child: new Text('Back'),),
           ],
         ),
